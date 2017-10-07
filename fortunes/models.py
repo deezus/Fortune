@@ -10,5 +10,5 @@ class Fortune(models.Model):
     id = models.AutoField(primary_key=True)
     text = models.CharField(max_length=1000)
     score = models.IntegerField()
-    author = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
     date =  models.DateField(default=datetime.now)

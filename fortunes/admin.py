@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Fortune
+from .models import User
 
-# Register your models here.
+admin.site.register(Fortune)
+admin.site.register(User)
